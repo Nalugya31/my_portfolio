@@ -31,7 +31,65 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    .col-lg-6 img {
+        border-radius: 100%; /* Adjust the value as needed */
+    }
+    .form-row {
+    margin-bottom: 10px;
+}
 
+.form-input {
+    display: block;
+}
+
+.form-error {
+    color: red;
+}
+/* Form container */
+#contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Form rows */
+.form-row {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Input fields and textarea */
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.more-info {
+    display: none;
+}
+
+</style>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -56,9 +114,9 @@
             </div>
 
             <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Projects</a>
+                <!-- <a href="#project" class="nav-item nav-link">Projects</a>
                 <a href="#team" class="nav-item nav-link">Team</a>
-                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
@@ -74,18 +132,18 @@
                     <h3 class="text-primary mb-3">I'm</h3>
                     <h1 class="display-3 mb-3">Nalugya Vanessa Suzan</h1>
                     <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Software Engineer,Web Developer, Data Analysist, Apps Designer, Apps Developer</div>
+                    <div class="typed-text d-none">Software Engineer,Web Developer, Data Analysist, Machine Learning Engineer</div>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                        <a href="https://docs.google.com/document/d/1-fW6z3VwCjAm9-L50c9Ym71z1NFu9_SymSMIesjpFy4/edit?usp=sharing" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
-                        </button>
-                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
+                        </button> -->
+                        <!-- <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/profile.png" alt="">
+                    <img class="img-fluid" src="img/VANESSA_GBTALENT_HR.jpg" alt="height:10vh;">
                 </div>
             </div>
         </div>
@@ -94,7 +152,7 @@
 
 
     <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -102,15 +160,15 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
+                    16:9 aspect ratio -->
+                    <!-- <div class="ratio ratio-16x9">
                         <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
                             allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+    </div> 
     <!-- Video Modal End -->
 
 
@@ -121,36 +179,42 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center mb-5">
                         <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">15</h1>
-                            <h5 class="mb-0">Years</h5>
+                            <h1 class="display-1 mb-0">1</h1>
+                            <h5 class="mb-0">Year</h5>
                         </div>
-                        <h3 class="lh-base mb-0">of working experience as a web designer & developer</h3>
+                        <h3 class="lh-base mb-0">of working experience as a developer</h3>
                     </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
-                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                    <p class="mb-4">I hold certificates in different fields of the tech industry, where I gained a solid foundation in software engineering principles and practices. Over the past months, I have honed my skills through hands-on experience in various software development projects. My proficiency includes but is not limited to:</p>
+                    <div class="more-info" style="display: none;">
+                        
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Programming languages such as Python and JavaScript.</p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Web development technologies including HTML, CSS, and frameworks like Flask and Django.</p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Database management systems such as PostgreSQL, and MongoDB</p>
+                    </div>
+                    <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Version control systems like Git.</p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Agile methodologies for project management</p>
+                    <a class="btn btn-primary py-3 px-5 mt-3 read-more" href="#">Read More</a>
+                    
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
                         <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                            <img class="img-fluid rounded" src="img/work zlost.jpg" alt="">
                         </div>
                         <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                            <img class="img-fluid rounded" src="img/hackathon1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
+                    <!-- <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
                         <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                    </div> -->
+                    <!-- <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p> -->
                     <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
+                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">3</h2>
                     </div>
-                    <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p>
+                    <a href="https://github.com/Nalugya31?tab=repositories/"><p class="mb-0">For more information visit my GitHub.</p></a>
                 </div>
             </div>
         </div>
@@ -164,7 +228,7 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h1 class="display-5 mb-5">Skills & Experience</h1>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum clita dolor duo clita sit.</p>
+                    <!-- <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum clita dolor duo clita sit.</p> -->
                     <h3 class="mb-4">My Skills</h3>
                     <div class="row align-items-center">
                         <div class="col-md-6">
@@ -188,7 +252,7 @@
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">PHP</h6>
+                                    <h6 class="font-weight-bold">Python</h6>
                                     <h6 class="font-weight-bold">90%</h6>
                                 </div>
                                 <div class="progress">
@@ -200,7 +264,7 @@
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="font-weight-bold">Javascript</h6>
-                                    <h6 class="font-weight-bold">90%</h6>
+                                    <h6 class="font-weight-bold">50%</h6>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
@@ -208,8 +272,8 @@
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">Angular JS</h6>
-                                    <h6 class="font-weight-bold">95%</h6>
+                                    <h6 class="font-weight-bold">Typescript</h6>
+                                    <h6 class="font-weight-bold">50%</h6>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
@@ -218,7 +282,7 @@
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="font-weight-bold">Wordpress</h6>
-                                    <h6 class="font-weight-bold">85%</h6>
+                                    <h6 class="font-weight-bold">50%</h6>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
@@ -240,56 +304,66 @@
                         <div id="tab-1" class="tab-pane fade show p-0 active">
                             <div class="row gy-5 gx-4">
                                 <div class="col-sm-6">
-                                    <h5>UI Designer</h5>
+                                    <h5>Web Developer</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">2023 - 2024</p>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Product Designer</h5>
+                                    <h5>Data Analysist</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">2023 - 2024</p>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Web Designer</h5>
+                                    <h5>Machine Learning</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">2023 - 2024</p>
+                                    <!-- <h6 class="mb-0">Apex Software Inc</h6> -->
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Apps Designer</h5>
+                                    <h5>Artificial Intelligence</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Apex Software Inc</h6>
+                                    <p class="text-primary mb-1">2023 - 2024</p>
+                                    <!-- <h6 class="mb-0">Apex Software Inc</h6> -->
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Scientific Computing</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2023</p>
+                                    <!-- <h6 class="mb-0">Apex Software Inc</h6> -->
                                 </div>
                             </div>
                         </div>
                         <div id="tab-2" class="tab-pane fade show p-0">
                             <div class="row gy-5 gx-4">
                                 <div class="col-sm-6">
-                                    <h5>UI Design Course</h5>
+                                    <h5>Software Engineering Course</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">2023 - 2024</p>
+                                    <h6 class="mb-0">Refactory Academy</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>IOS Development</h5>
+                                    <h5>Data Analysis Course</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">2023</p>
+                                    <h6 class="mb-0">Freecode Camp</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Web Design</h5>
+                                    <h5>Machine Learning Course</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">2023</p>
+                                    <h6 class="mb-0">Freecode Camp</h6>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h5>Apps Design</h5>
+                                    <h5>Scientific Computing</h5>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
-                                    <h6 class="mb-0">Cambridge University</h6>
+                                    <p class="text-primary mb-1">2023</p>
+                                    <h6 class="mb-0">Freecode Camp</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Artiicial Intelligence</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2024</p>
+                                    <h6 class="mb-0">Simplilearn</h6>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +383,7 @@
                     <h1 class="display-5 mb-0">My Services</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
+                    <a class="btn btn-primary py-3 px-5" href="mailto:vanessanalugya@gmail.com">Hire Me</a>
                 </div>
             </div>
             <div class="row g-4">
@@ -319,9 +393,9 @@
                             <i class="fa fa-crop-alt fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Creative Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <h4 class="mb-3">Web Development</h4>
+                            
+                            <span>Explore the world of web development with expertise in HTML, CSS, and JavaScript. From building responsive layouts to interactive web applications, I bring your ideas to life on the digital canvas.</span>
                         </div>
                     </div>
                 </div>
@@ -331,9 +405,8 @@
                             <i class="fa fa-code-branch fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Graphic Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <h4 class="mb-3">Data Analysis</h4>
+                            <span>Unlock valuable insights from your data with expertise in statistical analysis and predictive modeling. From exploratory data analysis to developing actionable recommendations, I leverage data-driven approaches to drive informed decision-making and optimize business strategies.</span>
                         </div>
                     </div>
                 </div>
@@ -343,9 +416,8 @@
                             <i class="fa fa-code fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">Web Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <h4 class="mb-3">Machine Learning</h4>
+                            <span>Dive into the exciting world of machine learning with expertise in algorithm development, model training, and predictive analytics.</span>
                         </div>
                     </div>
                 </div>
@@ -355,9 +427,8 @@
                             <i class="fa fa-laptop-code fa-2x text-dark"></i>
                         </div>
                         <div class="ms-sm-4">
-                            <h4 class="mb-3">UI/UX Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo clita sit sed sit dolor eos.</span>
+                            <h4 class="mb-3">Artificial Intelligence</h4>
+                            <span>Embark on the journey of artificial intelligence with expertise in machine learning, natural language processing, and computer vision.</span>
                         </div>
                     </div>
                 </div>
@@ -367,7 +438,7 @@
     <!-- Service End -->
 
 
-    <!-- Projects Start -->
+    <!-- Projects Start
     <div class="container-xxl py-6 pt-5" id="project">
         <div class="container">
             <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
@@ -439,12 +510,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Projects End -->
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-6 pb-5" id="team">
+    <!-- <div class="container-xxl py-6 pb-5" id="team">
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
@@ -493,12 +564,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+    <!-- <div class="container-fluid bg-light py-5 my-5" id="testimonial">
         <div class="container-fluid py-5">
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonial</h1>
             <div class="row justify-content-center">
@@ -558,7 +629,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
@@ -576,13 +647,13 @@
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="mb-2">My office:</p>
-                    <h3 class="fw-bold">123 Street, New York, USA</h3>
+                    <h3 class="fw-bold">CM9W+QC Bukerere</h3>
                     <hr class="w-100">
                     <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+012 345 6789</h3>
+                    <h3 class="fw-bold">+256744083134</h3>
                     <hr class="w-100">
                     <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">info@example.com</h3>
+                    <h3 class="fw-bold">vanessanalugya@gmail.com</h3>
                     <hr class="w-100">
                     <p class="mb-2">Follow me:</p>
                     <div class="d-flex pt-2">
@@ -593,38 +664,27 @@
                     </div>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
+
+                    <form id="contact-form" method="POST" action="https://formspree.io/f/xjvnpkky">
+                        <div class="form-row form-error" style="display:none;"></div>
+                        <div class="form-row">
+                          <label for="contact-form-name">Name:</label>
+                          <input id="contact-form-name" class="form-input" type="text" name="name" required>
                         </div>
-                    </form>
+                        <div class="form-row">
+                          <label for="contact-form-email">Email:</label>
+                          <input id="contact-form-email" class="form-input" type="email" name="email" required>
+                        </div>
+                        <div class="form-row">
+                          <label for="contact-form-phone">Phone:</label>
+                          <input id="contact-form-phone" class="form-input" type="tel" name="phone">
+                        </div>
+                        <div class="form-row">
+                          <label for="contact-form-message">Message:</label>
+                          <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                      </form>
                 </div>
             </div>
         </div>
@@ -637,27 +697,24 @@
         <div class="container-xxl pt-5 px-0">
             <div class="bg-dark">
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/place/Groundbreaker+Talents/@0.4194834,32.6935289,17z/data=!3m1!4b1!4m6!3m5!1s0x177db7f34e62c58f:0x6ada67449063eaf4!8m2!3d0.419478!4d32.6961038!16s%2Fg%2F11l6zjrrxd?entry=ttu"
                 frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
                 tabindex="0"></iframe>
             </div>
         </div>
     </div>
     <!-- Map End -->
-
+<br>
+<br>
 
     <!-- Copyright Start -->
     <div class="container-fluid bg-dark text-white py-4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Your Site Name</a>, All Right Reserved.
+                        &copy; <a class="border-bottom text-secondary" href="#">Nalugya Vanessa Suzan</a>, All Right Reserved.
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom text-secondary" href="https://htmlcodex.com">HTML Codex</a>
-                        <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -667,6 +724,25 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var readMoreButton = document.querySelector('.read-more');
+        var moreInfo = document.querySelector('.more-info');
+    
+        readMoreButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+                readMoreButton.textContent = 'Read Less';
+            } else {
+                moreInfo.style.display = 'none';
+                readMoreButton.textContent = 'Read More';
+            }
+        });
+    });
+
+</script>
 
 
     <!-- JavaScript Libraries -->
