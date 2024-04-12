@@ -32,6 +32,12 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <style>
+:root{
+    --bg-color:#FAFAFB;
+    --second-bg-color:#FAFAFB;
+    --text-color: black;
+    --main-color:  #533aa7;
+}
     .col-lg-6 img {
         border-radius: 100%; /* Adjust the value as needed */
     }
@@ -106,6 +112,75 @@ button[type="submit"]:hover {
 .container-fluid.bg-dark.text-white.py-4 .col-md-6 {
     text-align: center;
 }
+.row.align-items-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col-sm-4 video,
+.col-sm-4 img {
+    height: 40vh;
+    width: auto;
+}
+
+.footer{
+    position:relative ;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--second-bg-color);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+.footer .social a{
+  
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: white;
+    box-shadow: 0 0 25px var(--main-color);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: black;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
 
 </style>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -143,6 +218,10 @@ button[type="submit"]:hover {
 
 
     <!-- Header Start -->
+
+
+    <!-- <div class="splash"></div> -->
+
     <div class="container-fluid bg-light my-6 mt-0" id="home">
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -151,8 +230,9 @@ button[type="submit"]:hover {
                     <h1 class="display-3 mb-3">Nalugya Vanessa Suzan</h1>
                     <h2 class="typed-text-output d-inline"></h2>
                     <div class="typed-text d-none">Software Engineer,Web Developer, Data Analyst, Machine Learning Engineer</div>
+                    <p>I'm a software engineer driven by a desire to make a difference, to use technology as a force for good in the world.</p>
                     <div class="d-flex align-items-center pt-5">
-                        <a href="https://docs.google.com/document/d/1-fW6z3VwCjAm9-L50c9Ym71z1NFu9_SymSMIesjpFy4/edit?usp=sharing" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1JSatlSSvvtUlHpdww3VIaa_6Pq7eLWAc/view?usp=sharing" class="btn btn-primary py-3 px-4 me-5">Download CV</a>
                         <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
@@ -171,7 +251,9 @@ button[type="submit"]:hover {
 
 
     <!-- About Start -->
+    
     <div class="container-xxl py-6" id="about">
+        <h1 class="display-5 mb-5">About</h1>
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -191,32 +273,50 @@ button[type="submit"]:hover {
                     </div>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Version control systems like Git.</p>
                         <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Agile methodologies for project management</p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Consuming APIs Forexample MTN Momo API</p>
+                        <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Data Analysis skills and data scrapping</p>
                     <a class="btn btn-primary py-3 px-5 mt-3 read-more" href="#">Read More</a>
                     
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/work zlost.jpg" alt="">
+                <!-- media  start-->
+                <div class="col-sm-4">
+                    <img class="img-fluid rounded"  src="img/hackathon1.jpg" alt="" style="height: 40vh; width: auto;">
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                    <h1 class="border-end pe-3 me-3 mb-0">Projects Completed</h1>
+                    <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">3</h2>
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3 mb-4 align-items-center">
+                        <div class="col-sm-4">
+                            <h3>Follow the money project</h3>
+                            <!-- Embedding a video -->
+                            <video controls class="img-fluid rounded" style="height: 40vh; width: auto;">
+                                <source src="img/video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/hackathon1.jpg" alt="">
+                        <div class="col-sm-4">
+                            <h3>AI resume ranking system</h3>
+                            <video controls class="img-fluid rounded" style="height: 40vh; width: auto;">
+                                <source src="img/NFT_demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Spareparts management system</h3>
+                            <img class="img-fluid rounded"  src="img/bereal_app.png" alt="" style="height: 40vh; width: auto;">
                         </div>
                     </div>
-                    <!-- <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
-                    </div> -->
-                    <!-- <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p> -->
-                    <div class="d-flex align-items-center mb-3">
-                        <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                        <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">3</h2>
-                    </div>
+                </div>
+                
                     <a href="https://github.com/Nalugya31?tab=repositories/"><p class="mb-0">For more information visit my GitHub.</p></a>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- About End -->
 
 
@@ -509,17 +609,46 @@ button[type="submit"]:hover {
 <br>
 
     <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
+    <!-- <div class="container-fluid bg-dark text-white py-4">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0" style="text-align: center;">
-                        &copy; <a class="border-bottom text-secondary" href="#">Nalugya Vanessa Suzan</a>, All Right Reserved.
+                        &copy; <a class="border-bottom text-secondary" href="#">Nalugya Vanessa Suzan</a>, All Rights Reserved.
                     </div>
                     
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <footer class="footer" style="color: black;">
+        <div class="social">
+            <a class="btn btn-square btn-primary me-2" href="https://twitter.com/Vanessa66480"><i class="fab fa-twitter"></i></a>
+                       
+            <a class="btn btn-square btn-primary me-2" href="https://github.com/Nalugya31" target="_blank"><i class="fab fa-github"></i></a>
+
+            <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/vanessa-nalugya-336662270/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <ul class="list">
+            <!-- <li>
+                <a href="#">FAQ</a>
+            </li> -->
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About </a>
+            </li>
+            <li>
+                <a href="#">Skills</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            Vanessa Suzan Nalugya | All Rights Reserved
+        </p>
+    </footer>
     <!-- Copyright End -->
 
 
